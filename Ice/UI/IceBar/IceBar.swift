@@ -25,7 +25,7 @@ final class IceBarPanel: NSPanel {
             defer: false
         )
         self.appState = appState
-        self.title = "Ice Bar"
+        self.title = String(localized: "Ice Bar")
         self.titlebarAppearsTransparent = true
         self.isMovableByWindowBackground = true
         self.allowsToolTipsWhenApplicationIsInactive = true
@@ -484,3 +484,4 @@ private struct IceBarItemClickView: NSViewRepresentable {
 
     func updateNSView(_ nsView: NSView, context: Context) { }
 }
+

@@ -89,7 +89,7 @@ final class MenuBarOverlayPanel: NSPanel {
             defer: false
         )
         self.level = .statusBar
-        self.title = "Menu Bar Overlay"
+        self.title = String(localized: "Menu Bar Overlay")
         self.backgroundColor = .clear
         self.hasShadow = false
         self.ignoresMouseEvents = true
@@ -791,3 +791,4 @@ private final class MenuBarOverlayPanelContentView: NSView {
 private extension Logger {
     static let overlayPanel = Logger(category: "MenuBarOverlayPanel")
 }
+

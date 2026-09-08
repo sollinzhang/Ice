@@ -117,6 +117,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 				Base,
 			);
 			mainGroup = 716683212A767E6A006ABF84;
@@ -460,3 +461,4 @@
 	};
 	rootObject = 716683222A767E6A006ABF84 /* Project object */;
 }
+
