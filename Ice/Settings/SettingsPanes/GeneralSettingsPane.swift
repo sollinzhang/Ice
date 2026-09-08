@@ -35,12 +35,12 @@ struct GeneralSettingsPane: View {
         }
     }
 
-    private var rehideIntervalKey: String {
+    private var rehideIntervalKey: LocalizedStringKey {
         let formatted = manager.rehideInterval.formatted()
         if manager.rehideInterval == 1 {
-            return String(format: String(localized: "%@ second"), formatted)
+            return LocalizedStringKey(String(format: String(localized: "%@ second"), formatted))
         } else {
-            return String(format: String(localized: "%@ seconds"), formatted)
+            return LocalizedStringKey(String(format: String(localized: "%@ seconds"), formatted))
         }
     }
 
@@ -338,4 +338,3 @@ struct GeneralSettingsPane: View {
         .fixedSize()
         .environmentObject(AppState())
 }
-
